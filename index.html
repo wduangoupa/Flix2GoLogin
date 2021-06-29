@@ -52,10 +52,24 @@ button {
             <input type="text" placeholder="Enter Username" name="username" required>
             <label>Password : </label> 
             <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button> 
- 
+            <button type="submit" onclick="return check(this.form)" value="Login">Login</button> 
         </div> 
     </form>   
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "Roseindia" && form.pwd.value == "Roseindia")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
 </body>   
 </html>
 
