@@ -45,7 +45,7 @@ button {
 </style> 
 </head>  
 <body>  
-    <center> <h1> Student Login Form </h1> </center> 
+    <center> <h1> Flix2Go Login Form </h1> </center> 
     <form>
         <div class="container"> 
             <label>Username : </label> 
@@ -57,6 +57,23 @@ button {
             <button type="button" class="cancelbtn"> Cancel</button> 
             Forgot <a href="#"> password? </a> 
         </div> 
-    </form>   
+    </form>
+  <! javascript>
+<script language="javascript">
+function validate(text1,text2)
+{
+    if(username == test && password == test)
+    load("run.html");
+    else
+    {
+        load("fail.html");
+    }
+}
+function load(url)
+{
+    location href=url;
+}
+</script>
+
 </body>   
 </html>
